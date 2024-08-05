@@ -19,6 +19,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      
+      - name: grant permission to app directory
+        run: chmod 777 /var/www/html/abc.gamestroid.com
           
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
