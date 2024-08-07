@@ -27,6 +27,6 @@ jobs:
             server: ${{ secrets.FTP_SERVER }}
             port: ${{ secrets.FTP_PORT }}
             local_path: './*'
-            remote_path: '/var/www/html/abc.gamestroid.com'
+            remote_path: '/var/www/html/aaa.gamestroid.com'
             sftp_only: true
             password: ${{ secrets.FTP_PASSWORD }}
